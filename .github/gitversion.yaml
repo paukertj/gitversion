@@ -5,6 +5,7 @@ branches:
     increment: Major
     source-branches:
       - testing
+      - develop
     pre-release-weight: 55000
   testing:
     regex: ^testing$
