@@ -3,21 +3,13 @@ branches:
   master:
     regex: ^master$
     increment: Major
-    is-mainline: false
-    tracks-release-branches: false
-    is-release-branch: false
     pre-release-weight: 55000
   testing:
     regex: ^testing$
     increment: Minor
-    is-mainline: false
-    tracks-release-branches: false
-    is-release-branch: false
     pre-release-weight: 30000
   develop:
     regex: ^develop$
     increment: Patch
     is-mainline: true
-    tracks-release-branches: false
-    is-release-branch: false
     pre-release-weight: 0
