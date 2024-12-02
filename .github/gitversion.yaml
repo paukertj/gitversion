@@ -7,6 +7,7 @@ branches:
     is-mainline: true
     tracks-release-branches: false
     is-release-branch: false
+    pre-release-weight: 55000
   testing:
     regex: ^testing$
     mode: ContinuousDeployment
@@ -16,6 +17,7 @@ branches:
     is-mainline: false
     tracks-release-branches: false
     is-release-branch: false
+    pre-release-weight: 30000
   develop:
     regex: ^develop$
     mode: ContinuousDeployment
@@ -25,3 +27,4 @@ branches:
     is-mainline: false
     tracks-release-branches: false
     is-release-branch: false
+    pre-release-weight: 0
