@@ -22,6 +22,9 @@ jobs:
         with:
           useConfigFile: true
           configFilePath: ../gitversion.yaml
-          
+        
+      - name: Debug  
+        run: ls -la
+        
       - name: Show version
         run: echo "Version is ${{ steps.gitversion.outputs.Major }}.${{ steps.gitversion.outputs.Minor }}.${{ steps.gitversion.outputs.Patch }}"
