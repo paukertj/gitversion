@@ -1,15 +1,18 @@
 mode: Mainline
 commit-message-incrementing: MergeMessageOnly
 branches:
-  main:
+  master:
     regex: ^master$
     tag: useBranchName
+    is-develop: true
     increment: Major
-  feature:
+  testing:
     regex: ^testing$
     tag: useBranchName
+    is-develop: true
     increment: Minor
-  hotfix:
+  develop:
     regex: ^develop$
     tag: useBranchName
+    is-develop: true
     increment: Patch
