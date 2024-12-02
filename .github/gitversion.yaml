@@ -1,8 +1,7 @@
-mode: ContinuousDeployment
+mode: Mainline
 branches:
   master:
     regex: ^master$
-    mode: ContinuousDeployment
     increment: Major
     is-mainline: false
     tracks-release-branches: false
@@ -10,7 +9,6 @@ branches:
     pre-release-weight: 55000
   testing:
     regex: ^testing$
-    mode: ContinuousDeployment
     increment: Minor
     source-branches:
       - develop
@@ -20,7 +18,6 @@ branches:
     pre-release-weight: 30000
   develop:
     regex: ^develop$
-    mode: ContinuousDeployment
     increment: Patch
     source-branches: []
     is-mainline: true
