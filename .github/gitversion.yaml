@@ -10,8 +10,6 @@ branches:
   testing:
     regex: ^testing$
     increment: Minor
-    source-branches:
-      - develop
     is-mainline: false
     tracks-release-branches: false
     is-release-branch: false
@@ -19,7 +17,6 @@ branches:
   develop:
     regex: ^develop$
     increment: Patch
-    source-branches: []
     is-mainline: true
     tracks-release-branches: false
     is-release-branch: false
