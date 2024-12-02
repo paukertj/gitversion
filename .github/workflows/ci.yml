@@ -21,7 +21,7 @@ jobs:
         uses: gittools/actions/gitversion/execute@v3.0.3
         with:
           useConfigFile: true
-          configFilePath: ./.github/gitversion.yml
+          configFilePath: ./.github/gitversion.yaml
           
       - name: Show version
         run: echo "Version is ${{ steps.gitversion.outputs.Major }}.${{ steps.gitversion.outputs.Minor }}.${{ steps.gitversion.outputs.Patch }}"
