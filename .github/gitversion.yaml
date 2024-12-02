@@ -22,8 +22,7 @@ branches:
     regex: ^develop$
     mode: ContinuousDeployment
     increment: Patch
-    source-branches:
-      - testing
+    source-branches: []
     is-mainline: false
     tracks-release-branches: false
     is-release-branch: false
