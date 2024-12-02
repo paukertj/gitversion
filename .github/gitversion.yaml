@@ -3,7 +3,8 @@ commit-message-incrementing: MergeMessageOnly
 branches:
   main:
     regex: ^master$
-    tag: ''
+    tag: useBranchName
+    increment: Major
   feature:
     regex: ^testing$
     tag: useBranchName
