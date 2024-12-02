@@ -4,7 +4,7 @@ branches:
     regex: ^master$
     mode: ContinuousDeployment
     increment: Major
-    is-mainline: true
+    is-mainline: false
     tracks-release-branches: false
     is-release-branch: false
     pre-release-weight: 55000
@@ -23,7 +23,7 @@ branches:
     mode: ContinuousDeployment
     increment: Patch
     source-branches: []
-    is-mainline: false
+    is-mainline: true
     tracks-release-branches: false
     is-release-branch: false
     pre-release-weight: 0
