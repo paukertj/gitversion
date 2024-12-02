@@ -1,19 +1,14 @@
 mode: Mainline
+commit-message-incrementing: MergeMessageOnly
 branches:
-  master:
+  main:
     regex: ^master$
-    increment: Major
-    source-branches:
-      - testing
-    pre-release-weight: 55000
-  testing:
+    tag: ''
+  feature:
     regex: ^testing$
+    tag: useBranchName
     increment: Minor
-    source-branches:
-      - develop
-    pre-release-weight: 30000
-  develop:
+  hotfix:
     regex: ^develop$
+    tag: useBranchName
     increment: Patch
-    is-mainline: true
-    pre-release-weight: 0
