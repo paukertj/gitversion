@@ -3,7 +3,8 @@ branches:
   master:
     regex: ^master$
     increment: Major
-    source-branches: []
+    source-branches:
+      - testing
     pre-release-weight: 55000
   testing:
     regex: ^testing$
